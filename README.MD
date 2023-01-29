@@ -14,4 +14,4 @@ Explora la web en un buscador de forma automática como lo haces con Google.
   <img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Icono de Netlify">
 </p>
 
-![Hero del portfolio de Jeremy Díaz](./img/readme-images/clongoogle.png)
+![Google clon](./img/readme-images/clongoogle.png)
