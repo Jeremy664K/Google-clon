@@ -1,165 +1,322 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Google</title>
-        <link rel="stylesheet" href="/css/style.css">
-        <script src="/js/main.js" defer></script>
-        <meta name="author" content="Jeremy Díaz">
-        <meta name="description" content="Un clon de Google con el que puedes interactuar como quieras.">
-        <meta name="keywords" content="GoogleClon, Google, clonGoogle, clon de Google">
-        <link rel="icon" href="/img/icon-google.png" type="image/png">
-    </head>
-    <body>
-        <section class="busqueda__voz">
-            <div class="busqueda__voz-cerrar">✕</div>
-            <p class="busqueda__voz-texto">Pulse el boton para hablar</p>
-            <button class="busqueda__voz-boton">
-                <img class="busqueda__voz-icono" src="img/busqueda-voz.png" alt="Busqueda mediante micrófono" decoding="async" loading="lazy">
-            </button>
-        </section>
-        <section class="contenedor__crear__acceso">
-            <div class="crear__acceso">
-                <h4>Añadir un acceso directo</h4>
-                <form>
-                    <label for="nombre">Nombre</label>
-                    <input id="nombre" type="text">
-                    <label for="url">URL</label>
-                    <input id="url" type="text">
-                    <button class="acceso__directo__hecho">Hecho</button>
-                    <button class="acceso__directo__cancelar transparente">Cancelar</button>
-                </form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/main.js" defer></script>
+    <meta name="author" content="Jeremy Díaz" />
+    <meta
+      name="description"
+      content="Un clon de Google con el que puedes interactuar como quieras."
+    />
+    <meta
+      name="keywords"
+      content="GoogleClon, Google, clonGoogle, clon de Google"
+    />
+    <link rel="icon" href="/img/icon-google.png" type="image/png" />
+  </head>
+  <body>
+    <section class="busqueda__voz">
+      <div class="busqueda__voz-cerrar">✕</div>
+      <p class="busqueda__voz-texto">Pulse el boton para hablar</p>
+      <button class="busqueda__voz-boton">
+        <img
+          class="busqueda__voz-icono"
+          src="img/busqueda-voz.png"
+          alt="Busqueda mediante micrófono"
+          decoding="async"
+          loading="lazy"
+        />
+      </button>
+    </section>
+    <section class="contenedor__crear__acceso">
+      <div class="crear__acceso">
+        <h4>Añadir un acceso directo</h4>
+        <form>
+          <label for="nombre">Nombre</label>
+          <input id="nombre" type="text" />
+          <label for="url">URL</label>
+          <input id="url" type="text" />
+          <button class="acceso__directo__hecho">Hecho</button>
+          <button class="acceso__directo__cancelar transparente">
+            Cancelar
+          </button>
+        </form>
+      </div>
+    </section>
+    <header class="encabezado">
+      <ul class="encabezado__container">
+        <li class="encabezado__item">
+          <a href="https://mail.google.com/">Gmail</a>
+        </li>
+        <li class="encabezado__item">
+          <a href="https://www.google.cl/imghp?hl=es&tab=ri&ogbl">Imágenes</a>
+        </li>
+        <li class="encabezado__item">
+          <button
+            class="border transparente apps"
+            title="Aplicaciones de Google"
+          >
+            <img
+              decoding="async"
+              loading="lazy"
+              class="icono"
+              src="img/apps.png"
+              alt="Aplicaciones de Google"
+            />
+          </button>
+        </li>
+        <li>
+          <div class="encabezado__aplicaciones" id="encabezado__aplicaciones">
+            <a href="https://www.google.cl/webhp">
+              <img
+                decoding="async"
+                loading="lazy"
+                src="img/app/logo-google.png"
+                alt="Google búsqueda"
+              />Búsqueda
+            </a>
+            <a href="https://www.google.cl/maps?hl=es-419">
+              <img
+                decoding="async"
+                loading="lazy"
+                src="img/app/logo-maps.png"
+                alt="Google maps"
+              />Maps
+            </a>
+            <a href="https://www.youtube.com/">
+              <img
+                decoding="async"
+                loading="lazy"
+                src="img/app/youtube.png"
+                alt="Youtube"
+              />Youtube
+            </a>
+            <a href="https://play.google.com/store">
+              <img
+                decoding="async"
+                loading="lazy"
+                src="img/app/logo-play.png"
+                alt="Google play"
+              />Play
+            </a>
+            <a href="https://news.google.com/topstories">
+              <img
+                decoding="async"
+                loading="lazy"
+                src="img/app/logo-noticias.png"
+                alt="Noticias"
+              />Noticias
+            </a>
+            <a href="https://mail.google.com/mail/">
+              <img
+                decoding="async"
+                loading="lazy"
+                src="img/app/logo-gmail.png"
+                alt="Gmail"
+              />Gmail
+            </a>
+            <a href="https://contacts.google.com">
+              <img
+                decoding="async"
+                loading="lazy"
+                src="img/app/logo-contactos.png"
+                alt="Contactos"
+              />Contactos
+            </a>
+            <a href="https://www.google.com/intl/es/drive/">
+              <img
+                decoding="async"
+                loading="lazy"
+                src="img/app/logo-drive.png"
+                alt="Google drive"
+              />Drive
+            </a>
+            <a href="https://calendar.google.com">
+              <img
+                decoding="async"
+                loading="lazy"
+                src="img/app/logo-calendar.png"
+                alt="Calendario"
+              />Calendario
+            </a>
+            <a href="https://translate.google.cl/">
+              <img
+                decoding="async"
+                loading="lazy"
+                src="img/app/logo-traductor.png"
+                alt="Traductor"
+              />Traductor
+            </a>
+            <a href="https://photos.google.com">
+              <img
+                decoding="async"
+                loading="lazy"
+                src="img/app/logo-fotos.png"
+                alt="Fotos"
+              />Fotos
+            </a>
+            <a href="https://duo.google.com/">
+              <img
+                decoding="async"
+                loading="lazy"
+                src="img/app/logo-duo.png"
+                alt="Duo"
+              />Duo
+            </a>
+            <hr class="separador" />
+            <a href="https://readdle.com">
+              <img
+                decoding="async"
+                loading="lazy"
+                src="img/app/logo-documents.png"
+                alt="Documentos"
+              />Documentos
+            </a>
+            <a href="https://books.google.cl/?hl=es-419">
+              <img
+                decoding="async"
+                loading="lazy"
+                src="img/app/logo-books.png"
+                alt="Libros"
+              />Libros
+            </a>
+            <a href="https://www.blogger.com/about/?bpli=1">
+              <img
+                decoding="async"
+                loading="lazy"
+                src="img/app/logo-blogger.png"
+                alt="Blogger"
+              />Blogger
+            </a>
+            <a href="https://hangouts.google.com/">
+              <img
+                decoding="async"
+                loading="lazy"
+                src="img/app/logo-hangouts.png"
+                alt="Hangouts"
+              />Hangouts
+            </a>
+            <a href="https://earth.google.com/web/">
+              <img
+                decoding="async"
+                loading="lazy"
+                src="img/app/logo-earth.png"
+                alt="Earth"
+              />Earth
+            </a>
+            <a href="https://www.google.cl/save">
+              <img
+                decoding="async"
+                loading="lazy"
+                src="img/app/logo-collections.png"
+                alt="Colecciones"
+              />Colecciones
+            </a>
+          </div>
+        </li>
+        <li class="encabezado__item">
+          <button class="border transparente cuenta" title="Cuenta de Google">
+            <img
+              decoding="async"
+              loading="lazy"
+              class="border"
+              src="https://lh3.googleusercontent.com/ogw/ADea4I57mziO_Sk7eA3hAit2pbFriqUOlVvT0mNkH1WG7A=s32-c-mo"
+              alt="Usuario de Google"
+            />
+          </button>
+        </li>
+        <li>
+          <div class="encabezado__cuenta">
+            <div class="cuenta__perfil">
+              <img
+                class="border"
+                decoding="async"
+                loading="lazy"
+                src="https://lh3.googleusercontent.com/ogw/ADea4I57mziO_Sk7eA3hAit2pbFriqUOlVvT0mNkH1WG7A=s32-c-mo"
+                alt="Usuario de Google"
+              />
+              <h2>jevmydev</h2>
+              <p>Jeremy@gmail.com</p>
+              <a
+                class="border"
+                href="https://myaccount.google.com/?hl=es&utm_source=OGB&utm_medium=act"
+                >Gestionar tu cuenta de Google</a
+              >
             </div>
-        </section>
-        <header class="encabezado">
-            <ul class="encabezado__container">
-                <li class="encabezado__item">
-                    <a href="https://mail.google.com/">Gmail</a>
-                </li>
-                <li class="encabezado__item">
-                    <a href="https://www.google.cl/imghp?hl=es&tab=ri&ogbl">Imágenes</a>
-                </li>
-                <li class="encabezado__item">
-                    <button class="border transparente apps" title="Aplicaciones de Google">
-                        <img decoding="async" loading="lazy" class="icono" src="img/apps.png" alt="Aplicaciones de Google">
-                    </button>
-                </li>
-                <li>
-                    <div class="encabezado__aplicaciones" id="encabezado__aplicaciones">
-                        <a href="https://www.google.cl/webhp">
-                            <img decoding="async" loading="lazy" src="img/app/logo-google.png" alt="Google búsqueda">Búsqueda
-                        </a>
-                        <a href="https://www.google.cl/maps?hl=es-419">
-                            <img decoding="async" loading="lazy" src="img/app/logo-maps.png" alt="Google maps">Maps
-                        </a>
-                        <a href="https://www.youtube.com/">
-                            <img decoding="async" loading="lazy" src="img/app/youtube.png" alt="Youtube">Youtube
-                        </a>
-                        <a href="https://play.google.com/store">
-                            <img decoding="async" loading="lazy" src="img/app/logo-play.png" alt="Google play">Play
-                        </a>
-                        <a href="https://news.google.com/topstories">
-                            <img decoding="async" loading="lazy" src="img/app/logo-noticias.png" alt="Noticias">Noticias
-                        </a>
-                        <a href="https://mail.google.com/mail/">
-                            <img decoding="async" loading="lazy" src="img/app/logo-gmail.png" alt="Gmail">Gmail
-                        </a>
-                        <a href="https://contacts.google.com">
-                            <img decoding="async" loading="lazy" src="img/app/logo-contactos.png" alt="Contactos">Contactos
-                        </a>
-                        <a href="https://www.google.com/intl/es/drive/">
-                            <img decoding="async" loading="lazy" src="img/app/logo-drive.png" alt="Google drive">Drive
-                        </a>
-                        <a href="https://calendar.google.com">
-                            <img decoding="async" loading="lazy" src="img/app/logo-calendar.png" alt="Calendario">Calendario
-                        </a>
-                        <a href="https://translate.google.cl/">
-                            <img decoding="async" loading="lazy" src="img/app/logo-traductor.png" alt="Traductor">Traductor
-                        </a>
-                        <a href="https://photos.google.com">
-                            <img decoding="async" loading="lazy" src="img/app/logo-fotos.png" alt="Fotos">Fotos
-                        </a>
-                        <a href="https://duo.google.com/">
-                            <img decoding="async" loading="lazy" src="img/app/logo-duo.png" alt="Duo">Duo
-                        </a>
-                        <hr class="separador">
-                        <a href="https://readdle.com">
-                            <img decoding="async" loading="lazy" src="img/app/logo-documents.png" alt="Documentos">Documentos
-                        </a>
-                        <a href="https://books.google.cl/?hl=es-419">
-                            <img decoding="async" loading="lazy" src="img/app/logo-books.png" alt="Libros">Libros
-                        </a>
-                        <a href="https://www.blogger.com/about/?bpli=1">
-                            <img decoding="async" loading="lazy" src="img/app/logo-blogger.png" alt="Blogger">Blogger
-                        </a>
-                        <a href="https://hangouts.google.com/">
-                            <img decoding="async" loading="lazy" src="img/app/logo-hangouts.png" alt="Hangouts">Hangouts
-                        </a>
-                        <a href="https://earth.google.com/web/">
-                            <img decoding="async" loading="lazy" src="img/app/logo-earth.png" alt="Earth">Earth
-                        </a>
-                        <a href="https://www.google.cl/save">
-                            <img decoding="async" loading="lazy" src="img/app/logo-collections.png" alt="Colecciones">Colecciones
-                        </a>
-                    </div>
-                </li>
-                <li class="encabezado__item">
-                    <button class="border transparente cuenta" title="Cuenta de Google">
-                        <img decoding="async" loading="lazy" class="border" src="https://lh3.googleusercontent.com/ogw/ADea4I57mziO_Sk7eA3hAit2pbFriqUOlVvT0mNkH1WG7A=s32-c-mo" alt="Usuario de Google">
-                    </button>
-                </li>
-                <li>
-                    <div class="encabezado__cuenta">
-                        <div class="cuenta__perfil">
-                            <img class="border" decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/ogw/ADea4I57mziO_Sk7eA3hAit2pbFriqUOlVvT0mNkH1WG7A=s32-c-mo" alt="Usuario de Google">
-                            <h2>Jeremy664K</h2>
-                            <p>Jeremy@gmail.com</p>
-                            <a class="border" href="https://myaccount.google.com/?hl=es&utm_source=OGB&utm_medium=act">Gestionar tu cuenta de Google</a>
-                        </div>
-                        <hr class="separador">
-                        <div class="cuenta__otros">
-                            <a href="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fwww.google.com%3Fhl%3Des&hl=es&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Añadir otra cuenta</a>
-                        </div>
-                        <hr class="separador">
-                        <div class="cuenta__salir">
-                            <a href="https://www.google.com">Cerrar sesión</a>
-                        </div>
-                        <hr class="separador">
-                        <div class="cuenta__privacidad">
-                            <a href="https://policies.google.com/privacy?hl=es">Política de privacidad</a>
-                            <span>• </span>
-                            <a href="https://policies.google.com/terms?hl=es">Términos del servicio</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </header>
-        <main class="contenido">
-            <section class="principal">
-                <img decoding="async" loading="lazy" class="logo" src="img/logo-google.png" alt="Logo de Google">
-                <nav class="principal__busqueda border">
-                    <img decoding="async" loading="lazy" class="icono__busqueda" src="img/busqueda.png" alt="Buscar en Google">
-                    <input type="text" class="buscador" placeholder="Buscar en Google o escribir una URL">
-                    <button class="buscador__voz transparente" title="Búsqueda por voz">
-                        <img decoding="async" loading="lazy" src="img/microfono.png" alt="Busqueda por voz en Google">
-                    </button>
-                </nav>
-            </section>
-            <section class="acceso__directo">
-                <div>
-                    <button class="agregar__acceso-boton transparente">
-                        <div>+ </div>
-                        <p>Añadir acceso directo</p>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <footer class="pie">
-            <button class="border personalizar">
-                ✎ <span>Personalizar Chrome</span>
-            </button>
-            <button class="border reiniciar__color">↻</button>
-        </footer>
-    </body>
+            <hr class="separador" />
+            <div class="cuenta__otros">
+              <a
+                href="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fwww.google.com%3Fhl%3Des&hl=es&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+                >Añadir otra cuenta</a
+              >
+            </div>
+            <hr class="separador" />
+            <div class="cuenta__salir">
+              <a href="https://www.google.com">Cerrar sesión</a>
+            </div>
+            <hr class="separador" />
+            <div class="cuenta__privacidad">
+              <a href="https://policies.google.com/privacy?hl=es"
+                >Política de privacidad</a
+              >
+              <span>• </span>
+              <a href="https://policies.google.com/terms?hl=es"
+                >Términos del servicio</a
+              >
+            </div>
+          </div>
+        </li>
+      </ul>
+    </header>
+    <main class="contenido">
+      <section class="principal">
+        <img
+          decoding="async"
+          loading="lazy"
+          class="logo"
+          src="img/logo-google.png"
+          alt="Logo de Google"
+        />
+        <nav class="principal__busqueda border">
+          <img
+            decoding="async"
+            loading="lazy"
+            class="icono__busqueda"
+            src="img/busqueda.png"
+            alt="Buscar en Google"
+          />
+          <input
+            type="text"
+            class="buscador"
+            placeholder="Buscar en Google o escribir una URL"
+          />
+          <button class="buscador__voz transparente" title="Búsqueda por voz">
+            <img
+              decoding="async"
+              loading="lazy"
+              src="img/microfono.png"
+              alt="Busqueda por voz en Google"
+            />
+          </button>
+        </nav>
+      </section>
+      <section class="acceso__directo">
+        <div>
+          <button class="agregar__acceso-boton transparente">
+            <div>+</div>
+            <p>Añadir acceso directo</p>
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="pie">
+      <button class="border personalizar">
+        ✎ <span>Personalizar Chrome</span>
+      </button>
+      <button class="border reiniciar__color">↻</button>
+    </footer>
+  </body>
 </html>
